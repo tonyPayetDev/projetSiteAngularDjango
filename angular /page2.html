@@ -1,0 +1,25 @@
+<section class="container jumbotron ">
+    <h2>Page de page2</p></h2>
+
+     <div ng-controller="page2Ctrl" >
+
+    <p>{{ myData.fromServer }}
+        {{ message }}
+    </p>
+  <ul>
+    <li data-ng-repeat="x in myData.fromServer"  ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}">
+      <p>{{ x.code }}
+    <p>{{ x.url }}
+    </li>
+  </ul>
+    <form>
+        <textarea ng-model="msg"></textarea>
+    </form>
+    <p>
+        <em>Votre message</em> :
+        <blockquote>
+            {{msg}}
+        </blockquote>
+    </p>
+    </div>
+</section>
